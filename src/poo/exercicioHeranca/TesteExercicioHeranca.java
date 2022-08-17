@@ -30,13 +30,22 @@ public class TesteExercicioHeranca {
         funcionario.setMatricula("1001298");
 
         Estudante estudante1 = new Estudante();
-        estudante1.setNome("Leticia");
-        estudante1.setEndereco("Rua y");
-        LocalDate dtNascimentoEstudante1 = LocalDate.of(2001, Month.DECEMBER, 25);
+        estudante1.setNome("Bruno");
+        estudante1.setEndereco("Rua H");
+        LocalDate dtNascimentoEstudante1 = LocalDate.of(1999, Month.APRIL, 10);
         funcionario.setDtNascimento(dtNascimentoEstudante1);
-        estudante1.setRa("1782987");
+        estudante1.setRa("001");
         estudante1.setCurso("Computação");
-        LocalDate dtInicioCurso = LocalDate.of(2011, Month.FEBRUARY, 24);
+        LocalDate dtInicioCurso = LocalDate.of(2014, Month.FEBRUARY, 3);
         estudante1.setDtInicio(dtInicioCurso);
+
+        Emprestimo emprestimo1 = new Emprestimo();
+        emprestimo1.setEstudante(estudante1);
+        emprestimo1.setFuncionario(funcionario);
+        emprestimo1.setLivro(livroPOO);
+        LocalDate dtEmprestimo = LocalDate.of(2022, Month.AUGUST, 16);
+        LocalDate dtDevolucao = LocalDate.of(2022, Month.AUGUST, 25);
+        emprestimo1.setDtEmprestimo(dtEmprestimo);
+        emprestimo1.setDtDevolucao(dtDevolucao);
     }
 }

@@ -13,4 +13,9 @@ public class Livro {
     public Livro(String titulo) {
         this.titulo = titulo;
     }
+
+    @Override
+    public String toString() {
+        return "Titulo: " + this.titulo;
+    }
 }
