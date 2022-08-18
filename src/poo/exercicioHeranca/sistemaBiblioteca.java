@@ -16,7 +16,6 @@ public class sistemaBiblioteca {
             "| 0 - SAIR                               |",
             "|----------------------------------------|"
     };
-
     private static Scanner buffer = new Scanner(System.in);
 
     public static void main(String[] args) {
