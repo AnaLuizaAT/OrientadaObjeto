@@ -5,7 +5,6 @@ import java.time.Month;
 
 public class TesteExercicioHeranca {
     public static void main(String[] args) {
-
         LocalDate dataNascimento = LocalDate.of(1998, Month.SEPTEMBER, 12);
         Autor beto = new Autor("Ana Luiza", dataNascimento, "Tres Lagoas", "TADS", 5);
 
