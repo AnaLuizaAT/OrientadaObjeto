@@ -17,7 +17,9 @@ public class Livro {
 
     @Override
     public String toString() {
-        return "Titulo: " + this.titulo;
+        return "Titulo:\t " + this.titulo
+                + "\nEditora\t" + this.editora
+                + "\nData Lançamento:\t" + this.dataLancamento;
     }
 
     public static Livro cadastrarLivro() {
@@ -36,7 +38,6 @@ public class Livro {
         String dtLanc[] = data.split("/");
         if (dtLanc.length != 3) {
             System.out.println("Digite a data corretamente");
-            in.close();
             return null;
         }
         int dd = Integer.parseInt(dtLanc[0]);
@@ -44,7 +45,6 @@ public class Livro {
         int y = Integer.parseInt(dtLanc[2]);
         LocalDate d = LocalDate.of(y, m, dd);
         novoLivro.setDataLancamento(d);
-        in.close();
         return novoLivro;
     }
 }
