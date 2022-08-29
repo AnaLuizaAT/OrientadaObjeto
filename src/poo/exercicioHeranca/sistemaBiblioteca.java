@@ -51,7 +51,7 @@ public class sistemaBiblioteca {
                 livros.add(novoLivro);
                 break;
 
-//            case 2:
+            case 2:
 //                Funcionario novoFuncionario = Funcionario.cadastrarFuncionario();
             default:
                 System.out.println("Saindo da função escolha");

@@ -1,12 +1,15 @@
 package poo.exercicioHeranca;
 
-import lombok.Data;
+
+import lombok.Builder;
 
 import java.time.LocalDate;
 
-@Data
+@Builder
 public class Funcionario extends Pessoa {
     private String matricula;
     private LocalDate dtAdmissao;
     private String cargo;
+
+    Pessoa novaPessoa = Pessoa.lerPessoa();
 }

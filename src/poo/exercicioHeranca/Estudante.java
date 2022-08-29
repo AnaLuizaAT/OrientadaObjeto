@@ -1,12 +1,14 @@
 package poo.exercicioHeranca;
 
-import lombok.Data;
+import lombok.Builder;
 
 import java.time.LocalDate;
 
-@Data
+@Builder
 public class Estudante extends Pessoa {
     private String ra;
     private String curso;
     private LocalDate dtInicio; //quando iniciou o curso
+
+    Pessoa novaPessoa = Pessoa.lerPessoa();
 }
